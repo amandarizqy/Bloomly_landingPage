@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bloomly — Titip Beli Bunga Segar dari Pasar Rawa Belong</title>
+<meta name="description" content="Bloomly adalah layanan jastip bunga segar yang berbelanja langsung ke Pasar Rawa Belong setiap pagi dan mengantarkannya ke pintu Anda sebelum jam 10 pagi.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%237D3C58'/%3E%3Cpath d='M16 8c1.8 0 3 1.6 3 3.4 0 1-.4 2-1.1 2.8.9-.4 1.9-.6 2.9-.4 1.8.4 3 2 2.8 3.8-.2 1.8-1.9 3-3.7 2.7-1-.2-1.9-.8-2.5-1.6.3 1 .3 2 0 3-.6 1.7-2.3 2.7-4 2.2-1.7-.5-2.6-2.3-2-4 .3-.9 1-1.6 1.8-2-1 .3-2 .3-2.9-.1-1.6-.8-2.3-2.7-1.4-4.3.8-1.6 2.7-2.2 4.3-1.4.9.4 1.5 1.2 1.8 2.1-.2-1-.1-2 .4-2.9.6-1.1 1.7-1.8 2.9-1.8z' fill='%23FDF1EC'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,500;1,600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Lompat ke konten utama</a>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#beranda" class="logo">
+      <span class="logo-mark" data-flower="logo" aria-hidden="true"></span>
+      <span class="logo-word">Bloomly</span>
+    </a>
+
+    <nav class="nav-menu" id="navMenu">
+      <ul class="nav-links">
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#cara-kerja">Cara Kerja</a></li>
+        <li><a href="#katalog">Katalog</a></li>
+        <li><a href="#pasar">Pasar Hari Ini</a></li>
+        <li><a href="#layanan">Layanan</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+      <div class="nav-actions nav-actions--mobile">
+        <a href="https://www.figma.com/proto/2ZOg99hlryiBnVuvqdgBTc/Technopreneurship_Bloomly?node-id=3-1564&t=N298p9ybDaSpCMHm-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A1917" class="btn btn-ghost btn-sm">Masuk</a>
+        <a href="https://www.figma.com/proto/2ZOg99hlryiBnVuvqdgBTc/Technopreneurship_Bloomly?node-id=3-1564&t=N298p9ybDaSpCMHm-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A1917" class="btn btn-primary btn-sm">Daftar</a>
+      </div>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#masuk" class="btn btn-ghost btn-sm hide-mobile">Masuk</a>
+      <a href="#daftar" class="btn btn-primary btn-sm hide-mobile">Daftar</a>
+      <button class="hamburger" id="hamburger" aria-label="Buka menu navigasi" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="beranda">
+    <div class="container hero-inner">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="dot dot--live" aria-hidden="true"></span> Langsung dari Pasar Bunga Rawa Belong</p>
+        <h1 class="hero-title">Titip beli bunga segar, tanpa Anda perlu ke pasar jam 4 pagi.</h1>
+        <p class="hero-sub">Bloomly adalah layanan jastip tepercaya yang berbelanja langsung ke Pasar Rawa Belong setiap pagi buta, memeriksa kesegarannya satu per satu, lalu mengantarkannya ke pintu rumah Anda hari itu juga.</p>
+        <div class="hero-cta">
+          <a href="#daftar" class="btn btn-primary btn-lg">Mulai Titip Bunga</a>
+          <a href="#cara-kerja" class="btn btn-ghost btn-lg">Lihat Cara Kerja</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-num">05:00</span>
+            <span class="hero-stat-label">Belanja dimulai tiap pagi</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">250+</span>
+            <span class="hero-stat-label">Varietas bunga pasar</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-num">&lt;10:00</span>
+            <span class="hero-stat-label">Tiba di rumah Anda</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="hero-blob"></div>
+        <div class="hero-flower hero-flower--main" data-flower="rose"></div>
+        <div class="hero-flower hero-flower--two" data-flower="lily"></div>
+        <div class="hero-flower hero-flower--three" data-flower="tulip"></div>
+        <div class="float-chip float-chip--top">
+          <span class="float-chip-num">48 Jam</span>
+          <span class="float-chip-label">Dari kebun ke vas Anda</span>
+        </div>
+        <div class="float-chip float-chip--bottom">
+          <span class="float-chip-num">100%</span>
+          <span class="float-chip-label">Jaminan kesegaran</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="trust-strip reveal">
+      <div class="container trust-strip-inner">
+        <p class="trust-item"><strong>Sumber langsung</strong> dari petani &amp; Pasar Rawa Belong</p>
+        <p class="trust-item"><strong>Rantai dingin</strong> terjaga sepanjang perjalanan</p>
+        <p class="trust-item"><strong>Kurir khusus bunga</strong>, bukan kurir paket biasa</p>
+        <p class="trust-item"><strong>Tim kurasi</strong> berpengalaman 5+ tahun di pasar</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CARA KERJA ============ -->
+  <section class="section" id="cara-kerja">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--center">Cara Kerja</p>
+        <h2 class="section-title">Dari tengah pasar, sampai ke meja Anda</h2>
+        <p class="section-sub">Empat tahapan yang kami jalani setiap hari supaya bunga yang Anda terima sama segarnya dengan saat baru dipetik.</p>
+      </div>
+
+      <ol class="steps reveal">
+        <li class="step">
+          <span class="step-num">01</span>
+          <h3 class="step-title">Pesan &amp; tentukan spesifikasi</h3>
+          <p class="step-text">Pilih jenis bunga, jumlah, warna, dan catatan khusus — misalnya kuncup yang belum mekar penuh atau bebas dari kelopak yang layu.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">02</span>
+          <h3 class="step-title">Personal shopper turun ke pasar</h3>
+          <p class="step-text">Pukul 05.00 WIB, shopper Bloomly sudah berbelanja langsung di Pasar Rawa Belong, memilihkan tangkai terbaik sesuai pesanan Anda.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">03</span>
+          <h3 class="step-title">Verifikasi &amp; kontrol suhu</h3>
+          <p class="step-text">Setiap tangkai diperiksa di Pusat Inspeksi Bloomly, lalu disimpan dalam rantai dingin agar kesegarannya terjaga selama perjalanan.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">04</span>
+          <h3 class="step-title">Pengiriman ekspres</h3>
+          <p class="step-text">Bunga tiba di lokasi Anda sebelum pukul 10 pagi, dikemas rapi dan siap dirangkai atau langsung dipajang.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ KATEGORI ============ -->
+  <section class="section section--alt" id="katalog">
+    <div class="container">
+      <div class="section-head section-head--row reveal">
+        <div>
+          <p class="eyebrow">Koleksi Kami</p>
+          <h2 class="section-title">Cari berdasarkan jenis bunga</h2>
+        </div>
+        <a href="#pasar" class="link-arrow">Lihat harga pasar hari ini →</a>
+      </div>
+
+      <div class="category-grid reveal">
+        <a class="category-item" href="#pasar">
+          <span class="category-icon" style="--tint:#F3DEE6" data-flower="rose"></span>
+          <span class="category-label">Mawar</span>
+        </a>
+        <a class="category-item" href="#pasar">
+          <span class="category-icon" style="--tint:#FBE5E8" data-flower="tulip"></span>
+          <span class="category-label">Tulip</span>
+        </a>
+        <a class="category-item" href="#pasar">
+          <span class="category-icon" style="--tint:#FBF1E4" data-flower="lily"></span>
+          <span class="category-label">Bakung (Lily)</span>
+        </a>
+        <a class="category-item" href="#pasar">
+          <span class="category-icon" style="--tint:#F6E2E5" data-flower="gerbera"></span>
+          <span class="category-label">Gerbera</span>
+        </a>
+        <a class="category-item" href="#pasar">
+          <span class="category-icon" style="--tint:#EEE2F0" data-flower="anggrek"></span>
+          <span class="category-label">Anggrek</span>
+        </a>
+        <a class="category-item" href="#pasar">
+          <span class="category-icon" style="--tint:#FBE5E8" data-flower="carnation"></span>
+          <span class="category-label">Carnation</span>
+        </a>
+      </div>
+
+      <!-- ===== Produk Unggulan ===== -->
+      <div class="section-head section-head--row reveal product-head">
+        <div>
+          <p class="eyebrow">Panen Minggu Ini</p>
+          <h2 class="section-title">Paling diminati di Bloomly</h2>
+        </div>
+        <a href="#daftar" class="link-arrow">Lihat katalog lengkap →</a>
+      </div>
+
+      <div class="product-grid reveal">
+
+        <article class="product-card">
+          <div class="product-media" style="--tint1:#9B3B53; --tint2:#5C2A40;">
+            <span class="status-badge status-badge--ok">Tersedia</span>
+            <span class="product-flower" data-flower="rose"></span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Mawar Merah</h3>
+            <p class="product-desc">Grade A+, kelopak penuh &amp; tangkai kokoh.</p>
+            <div class="product-row">
+              <div class="product-price"><span class="price-num">Rp150.000</span><span class="price-unit">/ ikat</span></div>
+              <button class="btn-mini" type="button">+ Jastip</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-media" style="--tint1:#E8829A; --tint2:#C2487A;">
+            <span class="status-badge status-badge--ok">Tersedia</span>
+            <span class="product-flower" data-flower="lily"></span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Pink Lily</h3>
+            <p class="product-desc">Impor premium, aroma lembut &amp; tahan lama.</p>
+            <div class="product-row">
+              <div class="product-price"><span class="price-num">Rp170.000</span><span class="price-unit">/ 5 tangkai</span></div>
+              <button class="btn-mini" type="button">+ Jastip</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-media" style="--tint1:#B98FC9; --tint2:#7D3C58;">
+            <span class="status-badge status-badge--low">Stok Menipis</span>
+            <span class="product-flower" data-flower="anggrek"></span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Anggrek Putih</h3>
+            <p class="product-desc">Dari petani dataran tinggi, elegan &amp; awet.</p>
+            <div class="product-row">
+              <div class="product-price"><span class="price-num">Rp85.000</span><span class="price-unit">/ ikat</span></div>
+              <button class="btn-mini" type="button">+ Jastip</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-media" style="--tint1:#EADFD0; --tint2:#C9B79A;">
+            <span class="status-badge status-badge--ok">Tersedia</span>
+            <span class="product-flower" data-flower="babybreath"></span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Baby Breath</h3>
+            <p class="product-desc">Pengisi sempurna untuk rangkaian bouquet.</p>
+            <div class="product-row">
+              <div class="product-price"><span class="price-num">Rp85.000</span><span class="price-unit">/ buket</span></div>
+              <button class="btn-mini" type="button">+ Jastip</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card">
+          <div class="product-media" style="--tint1:#F2A6B8; --tint2:#9B3B53;">
+            <span class="status-badge status-badge--ok">Tersedia</span>
+            <span class="product-flower" data-flower="carnation"></span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Carnation Pink</h3>
+            <p class="product-desc">Ketahanan tinggi, cocok untuk acara berhari-hari.</p>
+            <div class="product-row">
+              <div class="product-price"><span class="price-num">Rp300.000</span><span class="price-unit">/ ikat</span></div>
+              <button class="btn-mini" type="button">+ Jastip</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card product-card--out">
+          <div class="product-media" style="--tint1:#E8B23D; --tint2:#9C6B1A;">
+            <span class="status-badge status-badge--out">Habis</span>
+            <span class="product-flower" data-flower="sunflower"></span>
+          </div>
+          <div class="product-body">
+            <h3 class="product-name">Bunga Matahari</h3>
+            <p class="product-desc">Ceria &amp; cerah, favorit musim panen.</p>
+            <div class="product-row">
+              <div class="product-price"><span class="price-num">Rp150.000</span><span class="price-unit">/ 3 tangkai</span></div>
+              <button class="btn-mini" type="button" disabled>Habis</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PAPAN HARGA PASAR (signature) ============ -->
+  <section class="market-board" id="pasar">
+    <div class="container">
+      <div class="market-head reveal">
+        <p class="eyebrow eyebrow--onlight"><span class="dot dot--live" aria-hidden="true"></span> Live dari Pasar Rawa Belong</p>
+        <h2 class="market-title">Papan Harga Pasar Hari Ini</h2>
+        <p class="market-sub">Harga &amp; ketersediaan ini diambil langsung oleh shopper kami dari lapak-lapak Pasar Rawa Belong setiap pagi.</p>
+      </div>
+    </div>
+
+    <div class="ticker-wrap reveal" role="list" aria-label="Daftar harga bunga hari ini">
+      <div class="ticker-track" id="tickerTrack">
+        <!-- duplicated via JS for seamless loop -->
+      </div>
+    </div>
+
+    <p class="market-updated">Diperbarui hari ini, pukul 05:12 WIB · Harga dapat berubah mengikuti kondisi pasar</p>
+  </section>
+
+  <!-- ============ LAYANAN JASTIP ============ -->
+  <section class="section" id="layanan">
+    <div class="container layanan-grid">
+      <div class="layanan-copy reveal">
+        <p class="eyebrow">Solusi Jastip</p>
+        <h2 class="section-title">Dipercaya florist, dibuat untuk Anda juga</h2>
+        <p class="section-sub">Untuk setiap hand bouquet dan rangkaian berharga, kesegaran bunga adalah segalanya. Tim kami memilih dan mengantarkan bunga terbaik langsung dari pasar — setiap hari, tanpa Anda perlu bangun pagi.</p>
+
+        <div class="feature-list">
+          <div class="feature-item">
+            <span class="feature-icon">✓</span>
+            <div>
+              <h3 class="feature-title">Jaminan Kesegaran</h3>
+              <p class="feature-text">Dipilih hari yang sama, pukul 05.00 dari Rawa Belong.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">✓</span>
+            <div>
+              <h3 class="feature-title">Logistik Cepat</h3>
+              <p class="feature-text">Pengiriman dengan kontrol suhu menuju rumah atau studio Anda.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">✓</span>
+            <div>
+              <h3 class="feature-title">Harga Transparan</h3>
+              <p class="feature-text">Harga pasar apa adanya, tanpa markup tersembunyi.</p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <span class="feature-icon">✓</span>
+            <div>
+              <h3 class="feature-title">Kurasi Berpengalaman</h3>
+              <p class="feature-text">Shopper kami mengenal tiap lapak di pasar selama bertahun-tahun.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="#daftar" class="btn btn-primary btn-lg">Mulai Pesan Sekarang</a>
+          <a href="#kontak" class="btn btn-ghost btn-lg">Gabung Jadi Mitra Florist ↗</a>
+        </div>
+      </div>
+
+      <div class="layanan-visual reveal" aria-hidden="true">
+        <div class="layanan-card layanan-card--main">
+          <span class="layanan-flower" data-flower="rose"></span>
+          <div class="layanan-pin">
+            <span class="pin-dot"></span>
+            <span>Pasar Rawa Belong, Jakarta</span>
+          </div>
+        </div>
+        <div class="layanan-card layanan-card--small layanan-card--a">
+          <span class="layanan-flower layanan-flower--sm" data-flower="anggrek"></span>
+        </div>
+        <div class="layanan-card layanan-card--small layanan-card--b">
+          <span class="layanan-flower layanan-flower--sm" data-flower="tulip"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TESTIMONI ============ -->
+  <section class="section section--alt" id="testimoni">
+    <div class="container">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--center">Kata Mereka</p>
+        <h2 class="section-title">Cerita dari pelanggan Bloomly</h2>
+      </div>
+
+      <div class="testi-grid reveal">
+        <figure class="testi-card">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <blockquote>"Sebagai florist, saya butuh bunga segar tiap pagi tanpa harus ke pasar sendiri. Bloomly jadi tangan kanan saya — tangkainya selalu rapi dan sesuai pesanan."</blockquote>
+          <figcaption>
+            <span class="avatar" style="--av:#9B3B53">RA</span>
+            <div><strong>Rina A.</strong><span>Wedding Florist, Jakarta Selatan</span></div>
+          </figcaption>
+        </figure>
+        <figure class="testi-card">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <blockquote>"Untuk acara dadakan, fitur catatan khusus sangat membantu. Saya tinggal tulis jumlah dan warna, sisanya diurus shopper Bloomly dengan rapi."</blockquote>
+          <figcaption>
+            <span class="avatar" style="--av:#C2487A">DP</span>
+            <div><strong>Dimas P.</strong><span>Event Organizer</span></div>
+          </figcaption>
+        </figure>
+        <figure class="testi-card">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <blockquote>"Saya pecinta bunga biasa, bukan pebisnis. Tapi sekarang setiap minggu selalu ada bunga segar di meja makan tanpa repot ke pasar pagi-pagi."</blockquote>
+          <figcaption>
+            <span class="avatar" style="--av:#7D3C58">SW</span>
+            <div><strong>Sari W.</strong><span>Pelanggan Pribadi</span></div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="section" id="faq">
+    <div class="container container--narrow">
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow--center">Pertanyaan Umum</p>
+        <h2 class="section-title">Masih ada yang ingin ditanyakan?</h2>
+      </div>
+
+      <div class="faq-list reveal">
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Apa itu layanan jastip bunga Bloomly?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a">
+            <p>Bloomly berbelanja bunga segar untuk Anda langsung di Pasar Rawa Belong setiap pagi, sesuai jenis dan jumlah yang Anda pesan, lalu mengirimkannya ke lokasi Anda hari itu juga.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Bagaimana cara memastikan kesegaran bunga?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a">
+            <p>Setiap tangkai diperiksa di Pusat Inspeksi Bloomly sebelum dikirim, mulai dari kekokohan batang hingga kondisi kelopak. Bunga juga disimpan dalam rantai dingin selama perjalanan.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Berapa lama waktu pengiriman?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a">
+            <p>Belanja dimulai pukul 05.00 WIB dan sebagian besar pesanan tiba di lokasi sebelum pukul 10 pagi, tergantung jarak dan jenis bunga yang dipesan.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Bisakah saya minta bunga di luar katalog?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a">
+            <p>Bisa. Gunakan kolom catatan khusus pada formulir pesanan untuk menjelaskan jenis, warna, atau referensi gambar — tim kami akan mencarikannya langsung di pasar.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">
+            <span>Bagaimana jika bunga yang sampai tidak sesuai?</span>
+            <span class="faq-icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-a">
+            <p>Hubungi tim Bloomly melalui fitur chat dalam 24 jam setelah pesanan diterima. Kami akan membantu penggantian atau penyesuaian sesuai kebijakan pengiriman kami.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CTA AKHIR ============ -->
+  <section class="cta-band reveal" id="daftar">
+    <div class="container cta-band-inner">
+      <h2 class="cta-title">Siap mendapatkan bunga segar hari ini?</h2>
+      <p class="cta-sub">Daftar gratis dan mulai titip pesanan pertama Anda ke Pasar Rawa Belong.</p>
+      <a href="https://www.figma.com/proto/2ZOg99hlryiBnVuvqdgBTc/Technopreneurship_Bloomly?node-id=3-1564&t=N298p9ybDaSpCMHm-1&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=3%3A1917" class="btn btn-light btn-lg">Mulai Titip Bunga Sekarang</a>
+      <p class="cta-note">Tanpa kartu kredit · Konsultasi pesanan pertama gratis</p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer" id="kontak">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a href="#beranda" class="logo">
+        <span class="logo-mark" data-flower="logo" aria-hidden="true"></span>
+        <span class="logo-word">Bloomly</span>
+      </a>
+      <p>Mendefinisikan ulang pengadaan bunga dengan transparansi, keandalan, dan kesegaran yang ditawarkan langsung dari Pasar Rawa Belong, Jakarta.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram Bloomly" class="social-icon">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+        </a>
+        <a href="#" aria-label="WhatsApp Bloomly" class="social-icon">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21l1.6-4.7A8 8 0 1 1 8.8 19L3 21Z"/><path d="M8.5 9.5c0 3.5 2.5 6 6 6"/></svg>
+        </a>
+        <a href="#" aria-label="Email Bloomly" class="social-icon">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <nav class="footer-col">
+      <h3>Layanan</h3>
+      <a href="#layanan">Pengadaan Cepat</a>
+      <a href="#katalog">Portal Grosir</a>
+      <a href="#cara-kerja">Langganan</a>
+    </nav>
+
+    <nav class="footer-col">
+      <h3>Perusahaan</h3>
+      <a href="#beranda">Tentang Bloomly</a>
+      <a href="#layanan">Karir</a>
+      <a href="#kontak">Hubungi Kami</a>
+    </nav>
+
+    <nav class="footer-col">
+      <h3>Bantuan</h3>
+      <a href="#faq">Kebijakan Pengiriman</a>
+      <a href="#faq">Ketentuan Layanan</a>
+      <a href="#faq">Kebijakan Privasi</a>
+    </nav>
+  </div>
+
+  <div class="container footer-bottom">
+    <p>© <span id="year"></span> Bloomly. Jastip bunga segar dari Pasar Rawa Belong, Jakarta.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
